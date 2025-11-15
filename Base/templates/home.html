@@ -1,0 +1,223 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hetal's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="https://Images/favicon.jpeg">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>`
+    
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Hetal's Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#projects" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hi, I'm</h6>
+                <h1 class="t-white">Hetal Patil</h1>
+                <h4 class="poppinss">AI/ML Engineer</h4>
+
+                <a href="{% static 'resume/Hetal_AIML.pdf' %}" target="_blank">
+                    <button class="btn poppins">Resume</button>
+                </a>
+
+                <a class="btn live poppins" id="hireme" href="https://www.linkedin.com/in/hetalpatil14/" target="_blank">Let's Connect</a>
+            </div>
+        </div>
+
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+                <img src="{% static 'images/mypic.png' %}" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+ <section id="about">
+    <h1 class="t-center my-2 t-white f-2">About Me</h1>
+
+    <div class="about-container flex s-around">
+
+        <!-- Text on Left -->
+        <div class="about-right flex">
+            <div class="about-content">
+                <h1 class="t-white m-b-1 poppins">Hetal Patil</h1>
+                <p class="t-white poppins">
+                    I’m a final-year B.Tech student at KPGU Vadodara (Computer Science &amp; Engineering)
+                    with a strong interest in Python development and Machine Learning.
+                    I enjoy building practical AI projects that focus on clean implementation, structured thinking, and real-world problem-solving.
+                    I’m consistently learning new tools, improving my workflows, and developing efficient, scalable solutions.
+                       
+                </p>
+                <a class="btn" id="hireme" href="#contact">Hire Me</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <h1 class="t-center my-2 t-white f-2">Skills</h1>
+
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <img src="{% static 'images/python.png' %}" alt="Python">
+      <span>Python</span>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/java.webp' %}" alt="Java">
+      <span>Core Java</span>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/html.png' %}" alt="HTML">
+      <span>HTML</span>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/css.png' %}" alt="CSS">
+      <span>CSS</span>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/tensorflow.png' %}" alt="TensorFlow">
+      <span>TensorFlow</span>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/keras.png' %}" alt="Keras">
+      <span>Keras</span>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/sklearn.png' %}" alt="Scikit-learn">
+      <span>Scikit-learn</span>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/opencv.png' %}" alt="OpenCV">
+      <span>OpenCV</span>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/pandas1.png' %}" alt="Pandas">
+      <span>Pandas</span>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/numpy.png' %}" alt="NumPy">
+      <span>NumPy</span>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/django.png' %}" alt="Django">
+      <span>Django</span>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/fastapi1.png' %}" alt="FastAPI">
+      <span>FastAPI</span>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/kaggle.png' %}" alt="Kaggle">
+      <span>Kaggle</span>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/git.png' %}" alt="GitHub">
+      <span>Git & GitHub</span>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1 class="t-center my-2 t-white f-2">Projects</h1>
+        <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col s-center items-center">
+                <h1 class="t-white poppins">GestuTalk</h1>
+                <p class="t-white poppins">
+                   Developed a real-time system using OpenCV, MediaPipe, and TensorFlow
+                    to translate gestures into text and speech, enhancing accessibility
+                     for speech- and hearing-impaired users.
+                </p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/Patilhetal/GestuTalk" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://drive.google.com/file/d/17V7ukslhNQh3Qu4mpee1-ONmacVptys0/view?usp=sharing" target="_blank" class="btn m-top live">Demo</a>
+                </div>
+            </div>
+
+            <div class="projects-item flex f-col s-center items-center">
+                <h1 class="t-white poppins">AI Virtual Mouse</h1>
+                <p class="t-white poppins">
+                    Built a gesture-controlled virtual mouse using Python and MediaPipe,
+                     enabling cursor movement, clicks, and automation with high accuracy
+                      for hands-free desktop interaction.
+                </p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/Patilhetal/VirtualMouse" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://drive.google.com/file/d/1SnkciTbIfxWYPDl8GKPgTkUUQRCqwAzI/view?usp=sharing" target="_blank" class="btn m-top live">Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="m-b-1">
+    <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+
+    <div class="contact-container flex s-around items-center contact-static">
+        <div class="contact-info">
+            <p class="t-white poppins"><i class="fa-solid fa-envelope"></i> patilhetal60@gmail.com</p>
+            <p class="t-white poppins"><i class="fa-solid fa-phone"></i> +91 8799404789</p>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer id="footer">
+      
+
+        <ul class="flex s-center w-80 font-awesome">
+            <a href="https://www.linkedin.com/in/hetalpatil14/" target="_blank"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
+            <a href="https://github.com/Patilhetal" target="_blank"><li><i class="fa-brands fa-github"></i></li></a>
+        </ul>
+
+        <p class="t-center my-2 poppins">
+            &copy; All Rights Reserved - <span class="cpy-white poppins">Hetal Patil</span>
+        </p>
+    </footer>
+</body>
+</html>
