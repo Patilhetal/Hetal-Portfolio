@@ -1,6 +1,5 @@
 # Python
 __pycache__/
-*.pyc
 
 # Virtual environment
 venv/
@@ -16,8 +15,10 @@ staticfiles/
 # SQLite database (optional to ignore)
 db.sqlite3
 
-# Logs
-*.log
+#static files
+staticfiles/
+
+
 
 # OS files
 .DS_Store
