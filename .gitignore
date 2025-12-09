@@ -1,8 +1,24 @@
-# Default ignored files
-/shelf/
-workspace.xml
-venv/
-db.sqlite3
-.idea/
+# Python
 __pycache__/
 *.pyc
+
+# Virtual environment
+venv/
+env/
+
+# IDE settings
+.idea/
+.vscode/
+
+# Django static files (collected)
+staticfiles/
+
+# SQLite database (optional to ignore)
+db.sqlite3
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
