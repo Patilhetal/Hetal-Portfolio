@@ -9,14 +9,11 @@ env/
 .idea/
 .vscode/
 
-# Django static files (collected)
-staticfiles/
+
 
 # SQLite database (optional to ignore)
 db.sqlite3
 
-#static files
-staticfiles/
 
 
 
