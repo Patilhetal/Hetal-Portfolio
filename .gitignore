@@ -14,7 +14,7 @@ env/
 # SQLite database (optional to ignore)
 db.sqlite3
 
-staticfiles/
+
 
 
 
